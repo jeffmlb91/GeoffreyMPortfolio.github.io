@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  overflow-x: ;
+}
+header {
+  background-image: url(./macos-monterey-1280x720-dark-wwdc-2021-5k-23425.jpg);
+}
+a,
+a:hover {
+  color: wheat;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+  display: inline;
+  line-height: 50px;
+  padding: 25px;
+  color: wheat;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#top-nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid lightskyblue;
+  transition: 0.5s;
+}
+#top-nav .name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.navbar-wrapper .navbar-list {
+  color: wheat;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  height: 50px;
+}
+/* The Nav section ends here*/
+
+/*This is the Media Query section*/
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
