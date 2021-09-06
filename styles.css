@@ -20,12 +20,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 0 20px;
 }
 
 #about h1 {
-  font-size: 50px;ß
+  font-size: 50px;
 }
 #about p {
   font-size: 20px;
@@ -38,4 +37,8 @@ body {
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 15px;
+}
+#about .button:hover {
+  background: rgb(173, 172, 169);
+  color: #3a18b5;
 }
