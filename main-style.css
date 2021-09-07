@@ -37,7 +37,21 @@ h2 {
   color: white;
 }
 /*THIS IS THE SECTION*/
+.about {
+  padding: 40px;
+}
+#main {
+  display: flex;
+  justify-content: space-around;
+}
 
+#main h2 {
+  color: black;
+  text-align: center;
+}
+.about img {
+  width: 200px;
+}
 .parent {
   display: flex;
   flex-direction: row;
@@ -74,11 +88,22 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px;
 }
-
 /*MEDIA QUERIE*/
 
 @media screen and (max-width: 1000px) {
   .card {
     width: 40%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .parent {
+    width: 100%;
+  }
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .card {
+    width: 80%;
   }
 }
