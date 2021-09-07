@@ -8,70 +8,109 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
-  overflow-x: ;
 }
 header {
   background-image: url(./macos-monterey-1280x720-dark-wwdc-2021-5k-23425.jpg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
 }
-a,
-a:hover {
-  color: wheat;
-  text-decoration: none;
-}
+
 ul,
-li {
+li,
+h2 {
   list-style: none;
   display: inline;
   line-height: 50px;
   padding: 25px;
   color: wheat;
 }
+.nav-links {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: white;
+}
+/*THIS IS THE SECTION*/
+.about {
+  padding: 40px;
+}
+#main {
+  display: flex;
+  justify-content: space-around;
+}
 
-.container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+#main h2 {
+  color: black;
+  text-align: center;
+}
+.about img {
+  width: 200px;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #8746ac, #ff4b2b);
+  color: #fff;
+}
+.content {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.content .btn {
+  display: block;
+  color: #330bac;
+  text-align: center;
+  background: linear-gradient(to right, #8746ac, #ff4b2b);
+  margin-top: 30px;
+  padding: 10px 5px;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px;
+}
+
+/*This section styles the footer of the webpage*/
+.bottom {
   display: flex;
   justify-content: space-between;
 }
-#top-nav {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
-  border-bottom: 1px solid lightskyblue;
-  transition: 0.5s;
-}
-#top-nav .name {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-}
-.navbar-wrapper .navbar-list {
-  color: wheat;
-  font-size: 15px;
-  font-weight: 800;
-  text-transform: uppercase;
-  height: 50px;
-}
-/* The Nav section ends here*/
 
-/*This is the Media Query section*/
+/*MEDIA QUERIE*/
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
   }
 }
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
+@media screen and (max-width: 620px) {
+  .parent {
+    width: 100%;
   }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .card {
+    width: 80%;
   }
 }
