@@ -88,6 +88,13 @@ h2 {
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px;
 }
+
+/*This section styles the footer of the webpage*/
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*MEDIA QUERIE*/
 
 @media screen and (max-width: 1000px) {
